@@ -1,0 +1,3 @@
+# CSS Fundamentos
+
+Este projeto é uma página web simples desenvolvida em HTML e CSS que demonstra a aplicação dos principais estilos CSS. O site abrange uma variedade de conceitos fundamentais de estilização, incluindo manipulação de cores, tipografia, alinhamento, espaçamento, sombras, bordas e comportamentos de layout. Além disso, explora técnicas de formatação de texto e caixas, com exemplos práticos como controle de dimensões, espaçamento interno e externo, sombras de caixa, e uso de imagens de fundo. Ideal para iniciantes, este projeto serve como um guia visual para aprender e entender os fundamentos do CSS.

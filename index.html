@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Fundamentos</title>
+    <style>
+      /* css aplicado apenas para formatar a pagina
+       sem fundamento didatico */
+      h3 {
+        color: red;
+      }
+
+      /* css aplicado apenas para formatar a pagina
+          sem fundamento didatico */
+      .container {
+        margin: 0 auto;
+        padding: 0 16px;
+        max-width: 768px;
+        font-size: 18px;
+      }
+
+      /* css aplicado apenas para formatar a pagina
+             sem fundamento didatico */
+      .caixa-container > div > div {
+        margin-bottom: 16px;
+        max-width: 250px;
+        max-height: 150px;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <h1>CSS Fundamentos</h1>
+    <p>
+      Esta é uma página web simples desenvolvida em HTML e CSS que demonstra a
+      aplicação dos principais estilos CSS. O site abrange uma variedade de
+      conceitos fundamentais de estilização, incluindo manipulação de cores,
+      tipografia, alinhamento, espaçamento, sombras, bordas e comportamentos de
+      layout. Além disso, explora técnicas de formatação de texto e caixas, com
+      exemplos práticos como controle de dimensões, espaçamento interno e
+      externo, sombras de caixa, e uso de imagens de fundo. Ideal para
+      iniciantes, este projeto serve como um guia visual para aprender e
+      entender os fundamentos do CSS
+    </p>
+
+    <p>
+      Pressione <kbd>Ctrl</kbd> + <kbd>U</kbd> para visualizar o código-fonte da
+      página.
+    </p>
+
+    <section>
+      <h2>Estilização de Textos</h2>
+      <div>
+        <h3>Cor e Tipografia</h3>
+        <p style="color: #3498db">Este texto tem a cor azul.</p>
+
+        <p style="font-family: Arial, sans-serif">
+          Este texto usa a fonte Arial.
+        </p>
+
+        <p style="font-size: 18px">Este texto tem tamanho de 18px.</p>
+
+        <p style="font-weight: bold">Este texto está em negrito.</p>
+
+        <p style="font-style: italic">Este texto está em itálico.</p>
+
+        <p style="text-transform: uppercase">
+          Este texto está em letras maiúsculas.
+        </p>
+
+        <p style="text-decoration: underline">Este texto está sublinhado.</p>
+
+        <h3>Alinhamento e Espaçamento</h3>
+        <p style="text-align: center">Este texto está centralizado.</p>
+
+        <p style="line-height: 1.8">
+          Este texto tem espaçamento de linha de 1.8.
+        </p>
+
+        <p style="letter-spacing: 3px">
+          Este texto tem espaçamento entre letras de 3px.
+        </p>
+
+        <p style="word-spacing: 10px">
+          Este texto tem espaçamento entre palavras de 10px.
+        </p>
+
+        <p style="text-indent: 50px">
+          Este texto tem indentação de 50px na primeira linha.
+        </p>
+
+        <p style="vertical-align: super">
+          Este texto está alinhado verticalmente como sobrescrito.
+        </p>
+
+        <h3>Sombras e Decoração</h3>
+        <p style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)">
+          Este texto tem uma sombra de 2px.
+        </p>
+
+        <p style="white-space: nowrap">
+          Este texto não quebra em uma nova linha.
+        </p>
+
+        <p style="overflow-wrap: break-word">
+          Este texto quebra automaticamente quando necessário.
+        </p>
+      </div>
+    </section>
+    <hr />
+    <section class="caixa-container">
+      <h2>Estilização de Caixas</h2>
+      <div>
+        <!-- Dimensões -->
+        <h3>Dimensões</h3>
+
+        <div style="width: 200px; background-color: #3498db">
+          Esta div tem largura de 200px.
+        </div>
+
+        <div style="height: 150px; background-color: #e74c3c">
+          Esta div tem altura de 150px.
+        </div>
+
+        <div style="max-width: 300px; background-color: #2ecc71">
+          Esta div tem largura máxima de 300px.
+        </div>
+
+        <div style="min-width: 100px; background-color: #9b59b6">
+          Esta div tem largura mínima de 100px.
+        </div>
+
+        <div
+          style="
+            max-height: 100px;
+            background-color: #f1c40f;
+            overflow-y: scroll;
+          "
+        >
+          Esta div tem altura máxima de 100px e conteúdo rolável.
+          <br />
+          <br />
+          Conteúdo extra para demonstrar a altura máxima. Lorem ipsum dolor sit
+          amet consectetur, adipisicing elit. Debitis ullam, dolore quos
+          reprehenderit consectetur, veritatis cupiditate eos nobis porro sint
+          sit in saepe repellendus, eum corporis possimus iure similique quis.
+          Conteúdo extra para demonstrar a altura máxima. Lorem ipsum dolor sit
+          amet consectetur, adipisicing elit. Debitis ullam, dolore quos
+          reprehenderit consectetur, veritatis cupiditate eos nobis porro sint
+          sit in saepe repellendus, eum corporis possimus iure similique quis.
+          Conteúdo extra para demonstrar a altura máxima. Lorem ipsum dolor sit
+          amet consectetur, adipisicing elit. Debitis ullam, dolore quos
+          reprehenderit consectetur, veritatis cupiditate eos nobis porro sint
+          sit in saepe repellendus, eum corporis possimus iure similique quis.
+        </div>
+
+        <div style="min-height: 50px; background-color: #e67e22">
+          Esta div tem altura mínima de 50px.
+        </div>
+
+        <!-- Espaçamento Interno e Externo -->
+        <h3>Espaçamento Interno e Externo</h3>
+
+        <div style="padding: 20px; background-color: #34495e">
+          Esta div tem espaçamento interno (padding) de 20px.
+        </div>
+
+        <div style="margin: 20px; background-color: #1abc9c">
+          Esta div tem espaçamento externo (margin) de 20px.
+        </div>
+
+        <!-- Bordas -->
+        <h3>Bordas</h3>
+
+        <div style="border: 2px solid #2c3e50; background-color: #ecf0f1">
+          Esta div tem uma borda de 2px sólida.
+        </div>
+
+        <div style="border-radius: 10px; background-color: #2980b9">
+          Esta div tem cantos arredondados com 10px de raio.
+        </div>
+
+        <div
+          style="
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            background-color: #e74c3c;
+          "
+        >
+          Esta div tem uma sombra de caixa.
+        </div>
+
+        <!-- Comportamento de Layout -->
+        <h3>Comportamento de Layout</h3>
+
+        <div style="display: inline-block; background-color: #16a085">
+          Esta div tem display inline-block.
+        </div>
+
+        <div style="position: relative; top: 20px; background-color: #27ae60">
+          Esta div está posicionada relativamente a 20px do topo.
+        </div>
+
+        <div style="overflow: hidden; background-color: #8e44ad">
+          Esta div tem overflow oculto.
+        </div>
+
+        <div style="float: right; background-color: #d35400">
+          Esta div está flutuando à direita.
+        </div>
+
+        <div style="clear: both; background-color: #7f8c8d">
+          Esta div limpa os elementos flutuantes.
+        </div>
+
+        <!-- Cor de Fundo e Imagem -->
+        <h3>Cor de Fundo e Imagem</h3>
+
+        <div style="background-color: #2980b9">
+          Esta div tem cor de fundo azul.
+        </div>
+
+        <div
+          style="
+            background-image: url('https://via.placeholder.com/150');
+            height: 150px;
+            background-size: cover;
+          "
+        >
+          Esta div tem uma imagem de fundo.
+        </div>
+
+        <div
+          style="
+            background-size: 50%;
+            background-image: url('https://via.placeholder.com/150');
+            height: 150px;
+          "
+        >
+          Esta div tem a imagem de fundo redimensionada para 50%.
+        </div>
+
+        <div
+          style="
+            background-position: center;
+            background-image: url('https://via.placeholder.com/150');
+            height: 150px;
+          "
+        >
+          Esta div tem a imagem de fundo centralizada.
+        </div>
+
+        <div
+          style="
+            background-repeat: no-repeat;
+            background-image: url('https://via.placeholder.com/150');
+            height: 150px;
+          "
+        >
+          Esta div tem a imagem de fundo sem repetição.
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
